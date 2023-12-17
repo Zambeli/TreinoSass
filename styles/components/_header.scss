@@ -24,7 +24,10 @@ header {
                 text-decoration: none;
                 @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria );
                 font-weight: 500;
-                
+                &:hover {
+                    font-weight: 700;
+                    transform: scale(1.1);
+                }
             }
         }
     }
@@ -64,6 +67,9 @@ header {
             border: none;
             color: white;
             font-family: variaveis.$ft-textos;
+            &:hover {
+                background-color: rgb(0, 56, 119);
+            }
         }
     }
 
